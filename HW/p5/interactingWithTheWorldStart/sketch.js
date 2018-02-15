@@ -1,11 +1,13 @@
 var centerX = 250;
 var centerY = 250;
-
 var carnival;
 var party;
 var bgImage;
 var carnivalButton;
 var partyButton;
+var showhide;
+var hiding = false;
+
 function preload() {
   carnival = loadImage("assets/carnival.jpg");
 party = loadImage("assets/party.jpg");
@@ -22,6 +24,15 @@ bgImage = carnival;
 partyButton.mousePressed(function() {
   bgImage = party;
 });
+showhide = createButton ("Show Hide Clown");
+showhide.position(250,10);
+showhide.mousePressed(function(){
+    if (hiding == false){
+        hiding = true;
+      }else{
+          hiding = false;
+          }
+        });
 
 }
 
@@ -29,7 +40,7 @@ function draw() {
   background(255);
 
   image(bgImage, 0, 0);
-
+if(hiding == false){
   fill(255, 255, 255);
 
   strokeWeight(1);
@@ -47,7 +58,7 @@ function draw() {
   noFill();
   strokeWeight(4);
   arc(centerX, centerY, 100, 100, 0, PI);
-
+}
   strokeWeight(30);
   arc(centerX, centerY, 100, 100, PI, TWO_PI);
 
