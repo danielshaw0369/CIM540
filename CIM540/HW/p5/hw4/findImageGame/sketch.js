@@ -20,7 +20,7 @@ function preload(){
   pics[0] = loadImage("assets/Football.png");
   pics[1] = loadImage("assets/basketball.png");
   pics[2] = loadImage("assets/soccer.png");
-  pics[3] = loadImage("assets/tennisball.jpg");
+  pics[3] = loadImage("assets/tennisball.png");
   pics[4] = loadImage("assets/baseball.png");
   pics[5] = loadImage("assets/snitch.JPG");
 }

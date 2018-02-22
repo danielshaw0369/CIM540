@@ -25,12 +25,12 @@ function setup() {
   umHideButton.position(75, 425);
 
   umButton.mousePressed(function() {
-    console.log("sick guitar solo");
+    console.log("Go Canes");
     showUm = true;
   });
 
   umHideButton.mousePressed(function(){
-    console.log("melee melee melee WWWARREEAAARRRHHHH");
+    console.log("hide");
     showUm = false;
   });
 }
