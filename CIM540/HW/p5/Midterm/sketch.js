@@ -13,7 +13,21 @@ function preload(){
   }
   mountain = loadImage(brokeback);
   console.log(mountain);
-}
+
+    createCanvas(1280, 480);
+    var backAnimation = createButton("previous image");
+    backAnimation.position(1080/2, 615);
+    backAnimation.mousePressed(function(){
+      if (currentImage === 24)
+        currentImage = 0;
+
+      currentImage = currentImage - 1;
+      draw();
+    });
+    draw();
+    noLoop();
+  }
+
 
 function setup() {
   createCanvas(1280, 480);
