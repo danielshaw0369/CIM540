@@ -33,7 +33,6 @@ function preload(){
     noLoop();
   }
 
-
 function setup() {
   createCanvas(1280, 480);
   var startAnimation = createButton("Next Image");
